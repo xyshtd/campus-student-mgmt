@@ -1,0 +1,27 @@
+{
+  "name": "final-project",
+  "version": "0.0.1",
+  "description": "A review time project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start:dev": "nodemon server/index.js --ignore dist/ --ignore src/ & npm run build:dev",
+    "build:dev": "npm run build -- --watch --mode=development"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-react": "^7.14.5",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
