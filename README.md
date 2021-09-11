@@ -9,7 +9,7 @@
 
 ### The Premise
 
-You are the CTO of the Margaret Hamilton Interplanetary Academy of JavaScript. Create a RESTful web platform that allows you to manage your students and campuses. Before getting started, please carefully review the expectations as outlined below.
+You are the CTO of a company which manages Campuses and Enrollments. Create a RESTful web platform that allows you to manage your students and campuses. Before getting started, please carefully review the expectations as outlined below.
 
 ### The tools
 
@@ -33,7 +33,7 @@ For the requirements and rubric, refer to the following two files:
 
 ### Views and Functionality
 
-Take a look in the wireframes folder as a reference for how your front-end _could_ look. Of course, you are encouraged to be creative and flex your own design muscles, but the wireframes should function as a good baseline/inspirational resource. Either way, the most important part of the project is that it works - **design/appearance is extra-credit**. If there ever appears to be a conflict between the wireframes and the rubric/requirements below, **go with the letter of the rubric/requirements.**
+You can determine views and functionality from the requirements and wireframes.png.
 
 ## Evaluation
 

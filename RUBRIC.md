@@ -10,7 +10,7 @@
 
 | Criteria                                                                   | Score | Comments |
 | -------------------------------------------------------------------------- | ----- | -------- |
-| Uses thunks to encapsulate AJAX requests                                   | -/2   |          |
+| Uses thunks to encapsulate AJAX requests for redux store                   | -/2   |          |
 | Avoids side effects/mutations in reducers and in renders                   | -/2   |          |
 | Takes advantage of components to enforce modularity/separation of concerns | -/2   |          |
 
@@ -29,7 +29,8 @@
 | Formatting (indentation, whitespace, etc) is consistent                  | -/2   |          |
 | No unused/unnecessary code                                               | -/2   |          |
 | Uses meaningful/self-documenting variable/function names                 | -/2   |          |
-| Does not contain blocks of commented out code (except for documentation) | -/2   |          |
+| Does not contain blocks of commented code, console.logs or node_modules  | -/2   |          |
+|   along with transpiled files
 
 ### Git (4/24)
 

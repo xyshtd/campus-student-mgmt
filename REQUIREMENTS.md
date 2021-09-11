@@ -2,6 +2,14 @@
 
 The requirements below are broken into separate **tiers**, which model the way we **recommend you approach the project**. That is, we recommend you complete (or complete the majority of) the requirements in Tier 1 before moving on to Tier 2, and so on. Of course, if you get stuck on a particular feature, we recommend moving on and trying another feature - don't sacrifice the good for the perfect!
 
+
+- the application needs to be deployed
+- the application needs to load with errors (blank screens are not acceptable)
+- do not copy and paste previous code!
+- you will have ample time to complete project, NO EXTENSIONS WILL BE GIVEN
+
+
+
 #### Seed
 
 - [ ] Write a sync function which sync's and seeds your database when your application starts 
@@ -18,14 +26,14 @@ The requirements below are broken into separate **tiers**, which model the way w
 
 - Write a `campuses` model with the following information:
   - [ ] name - not empty or null
-  - [ ] imageUrl - with a default value
+  - [ ] imageUrl - string can be null 
   - [ ] address - not empty or null
   - [ ] description - extremely large text
 - Write a `students` model with the following information:
   - [ ] firstName - not empty or null
   - [ ] lastName - not empty or null
   - [ ] email - not empty or null; must be a valid email
-  - [ ] imageUrl - with a default value
+  - [ ] imageUrl - string can be null 
   - [ ] gpa - decimal between 0.0 and 4.0
 - [ ] Students may be associated with at most one campus. Likewise, campuses may be associated with many students
 
@@ -102,14 +110,14 @@ Congrats! You have completed your first vertical slice!
 #### Frontend
 
 - [ ] Write a component to display a form updating _at least_ a campus's name and address
-- [ ] Display this component as part of the campus view, alongside the single campus
+- [ ] Display this component as part of the campus view
 - Submitting the form with valid data should:
   - [ ] Make an AJAX request that causes that campus to be updated in the database
   - [ ] Update the campus in the current view without needing to refresh the page
 - [ ] In the campus view, display an `Unregister` button next to each of its students, which removes the student from the campus (in the database as well as this view); hint: the student is still in the database but is no longer associated with the campus
 
-- [ ] Write a component to display a form updating _at least_ a student's first and last names, and email
-- [ ] Display this component as part of the student view, alongside the single student
+- [ ] Write a component to display a form updating a student
+- [ ] Display this component as part of the student view
 - Submitting the form with valid data should:
   - [ ] Make an AJAX request that causes that student to be updated in the database
   - [ ] Update the student in the current view without needing to refresh the page
