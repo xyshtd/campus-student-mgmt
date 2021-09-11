@@ -35,6 +35,8 @@ For the requirements and rubric, refer to the following two files:
 
 You can determine views and functionality from the requirements and wireframes.png.
 
+<img src='https://github.com/FullstackAcademy/jpfp-template-a-flex/blob/main/wireframes.png' />
+
 ## Evaluation
 
 - Requirements score (70%)
