@@ -34,6 +34,13 @@ For this project, you must use Express to handle HTTP requests and Sequelize to 
 - if you have an error, fix the error, before attempting to **add** functionality
 
 
+### Views and Functionality
+
+You can determine views and functionality from the requirements and wireframes.png.
+
+<img src='https://github.com/FullstackAcademy/jpfp-template-a-flex/blob/main/wireframes.png' />
+
+
 
 #### Seed
 
@@ -173,11 +180,7 @@ For this project, you must use Express to handle HTTP requests and Sequelize to 
 
 
 
-### Views and Functionality
 
-You can determine views and functionality from the requirements and wireframes.png.
-
-<img src='https://github.com/FullstackAcademy/jpfp-template-a-flex/blob/main/wireframes.png' />
 
 ## Evaluation
 
