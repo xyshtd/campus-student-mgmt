@@ -16,8 +16,6 @@ The requirements below are broken into separate **tiers**, which model the way w
 
 ### Tier 1: All Campuses and Students (20/61)
 
-<details>
-
 - [ ] Display the campuses component when the url matches `/campuses`
 - [ ] Display the students component when the url matches `/students`
 - [ ] Add a links to the navbar that can be used to navigate to the campuses view and the students view
@@ -38,13 +36,8 @@ The requirements below are broken into separate **tiers**, which model the way w
 - [ ] Students may be associated with at most one campus. Likewise, campuses may be associated with many students
 
 
-Congrats! You have completed your first vertical slice! 
-
-</details>
-
 ### Tier 2: Single Student and Single Campus (12/61)
 
-<details>
 
 - Write a component to display a single campus with the following information:
   - [ ] The campus's name, image, address and description
@@ -61,11 +54,9 @@ Congrats! You have completed your first vertical slice!
 - [ ] Clicking on the name of a student in the campus view should navigate to show that student in the student view
 - [ ] Clicking on the name of a campus in the student view should navigate to show that campus in the campus view
 
-</details>
 
 ### Tier 3: Adding a Campus and Adding a Student (10/61)
 
-<details>
 
 #### Frontend
 
@@ -82,11 +73,10 @@ Congrats! You have completed your first vertical slice!
   - [ ] Make an AJAX request that causes the new student to be persisted in the database
   - [ ] Add the new student to the list of students without needing to refresh the page
 
-</details>
+
 
 ### Tier 4: Removing a Campus and Removing a Student (8/61)
 
-<details>
 
 #### Frontend
 
@@ -101,11 +91,9 @@ Congrats! You have completed your first vertical slice!
   - [ ] Make an AJAX request that causes that student to be removed from database
   - [ ] Remove the student from the list of students without needing to refresh the page
 
-</details>
 
 ### Tier 5: Updating a Campus and Updating a Student (11/61)
 
-<details>
 
 #### Frontend
 
@@ -122,11 +110,11 @@ Congrats! You have completed your first vertical slice!
   - [ ] Make an AJAX request that causes that student to be updated in the database
   - [ ] Update the student in the current view without needing to refresh the page
 
-</details>
+
 
 ### Bonus Tier: Finishing Touches (23 EC)
 
-<details>
+
 
 #### Finishing Touches
 
@@ -155,4 +143,3 @@ Congrats! You have completed your first vertical slice!
 - [ ] Implement _back-end_ pagination for students (e.g. `/api/students?page=1` returns the first ten students' data, and `/api/students?page=2` returns students 11-20)
 - [ ] Implement _back-end_ pagination for campuses (e.g. `/api/campuses?page=1` returns the first ten campuses' data, and `/api/campuses?page=2` returns campuses 11-20)
 
-</details>
