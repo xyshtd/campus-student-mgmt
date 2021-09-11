@@ -22,16 +22,16 @@ For this project, you must use Express to handle HTTP requests and Sequelize to 
 - redux-thunk
 - axios
 
-### Requirements + Rubric
+### Requirements + Rubric (see rubric file)
+
 ## Requirements
-
-The requirements below are broken into separate **tiers**, which model the way we **recommend you approach the project**. That is, we recommend you complete (or complete the majority of) the requirements in Tier 1 before moving on to Tier 2, and so on. Of course, if you get stuck on a particular feature, we recommend moving on and trying another feature - don't sacrifice the good for the perfect!
-
 
 - the application needs to be deployed
 - the application needs to load with errors (blank screens are not acceptable)
 - do not copy and paste previous code!
 - you will have ample time to complete project, NO EXTENSIONS WILL BE GIVEN
+- build incrementally! 
+- if you have an error, fix the error, before attempting to **add** functionality
 
 
 
