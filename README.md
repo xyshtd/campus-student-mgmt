@@ -27,7 +27,7 @@ For this project, you must use Express to handle HTTP requests and Sequelize to 
 ## Requirements
 
 - the application needs to be deployed
-- the application needs to load with errors (blank screens are not acceptable)
+- the application needs to load without errors (blank screens are not acceptable)
 - do not copy and paste previous code!
 - you will have ample time to complete project, NO EXTENSIONS WILL BE GIVEN
 - build incrementally! 
