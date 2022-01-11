@@ -46,7 +46,7 @@ You can determine views and functionality from the requirements and wireframes s
 
 - [ ] Write a sync function which sync's and seeds your database when your application starts 
 
-### Tier 1: All Campuses and Students (20/61)
+### Tier 1: All Campuses and Students (26/59)
 
 - [ ] Display the campuses component when the url matches `/campuses`
 - [ ] Display the students component when the url matches `/students`
@@ -68,7 +68,7 @@ You can determine views and functionality from the requirements and wireframes s
 - [ ] Students may be associated with at most one campus. Likewise, campuses may be associated with many students
 
 
-### Tier 2: Single Student and Single Campus (12/61)
+### Tier 2: Single Student and Single Campus (10/59)
 
 
 - Write a component to display a single campus with the following information:
@@ -87,7 +87,7 @@ You can determine views and functionality from the requirements and wireframes s
 - [ ] Clicking on the name of a campus in the student view should navigate to show that campus in the campus view
 
 
-### Tier 3: Adding a Campus and Adding a Student (10/61)
+### Tier 3: Adding a Campus and Adding a Student (8/59)
 
 
 #### Frontend
@@ -107,7 +107,7 @@ You can determine views and functionality from the requirements and wireframes s
 
 
 
-### Tier 4: Removing a Campus and Removing a Student (8/61)
+### Tier 4: Removing a Campus and Removing a Student (6/59)
 
 
 #### Frontend
@@ -124,7 +124,7 @@ You can determine views and functionality from the requirements and wireframes s
   - [ ] Remove the student from the list of students without needing to refresh the page
 
 
-### Tier 5: Updating a Campus and Updating a Student (11/61)
+### Tier 5: Updating a Campus and Updating a Student (9/59)
 
 
 #### Frontend
@@ -144,7 +144,7 @@ You can determine views and functionality from the requirements and wireframes s
 
 
 
-### Bonus Tier: Finishing Touches (23 EC)
+### Bonus Tier: Finishing Touches (15 EC)
 
 
 
