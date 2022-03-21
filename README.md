@@ -18,7 +18,7 @@ For this project, you must use Express to handle HTTP requests and Sequelize to 
 - other client side libraries you will need
 - redux
 - react-redux
-- react-router-dom
+- react-router-dom@5
 - redux-thunk
 - axios
 
