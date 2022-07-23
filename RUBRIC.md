@@ -1,66 +1,25 @@
 ## Rubric
 
-| Score | Meaning                     |
-| ----- | --------------------------- |
-| 0     | Critera not met             |
-| 1     | Criteria met inconsistently |
-| 2     | Criteria met consistently   |
 
-### Listing Pages
+### Listing Pages (20 points)
 - User can view the students and the campuses
 - On the students listing, if a student has a campus, the campus name is shown
 - On the campuses listing, the number of enrollments is shown next to the campus
 
-### Detail Pages
+### Detail Pages (20 points)
+- A user can view student details and campus details
+- If a student has a campus, the campus name will be shown in a link on the student detail age which can be clicked on to get to the campus detail.
+- If a campus has enrollments, the enrollments will be shown on the campus detail page with links which can be clicked on the get to the student detail.
 
+### Creating Students and Campuses (20 points)
+- A user can create a student with a form on the students listing page
+- A user can create a campus with a form on the campuses listing page
+- The user interface should indicate an error if the campus or student could not be created.
 
-### Code Cleanliness/Maintainability (8/24)
+### Deleting Students and Campuses (20 points)
+- A user can delete a student with a form on the students listing page
+- A user can delete a campus with a form on the campuses listing page
 
-| Criteria                                                                 | Score | Comments |
-| ------------------------------------------------------------------------ | ----- | -------- |
-| Formatting (indentation, whitespace, etc) is consistent                  | -/2   |          |
-| No unused/unnecessary code                                               | -/2   |          |
-| Uses meaningful/self-documenting variable/function names                 | -/2   |          |
-| Does not contain blocks of commented code, console.logs or node_modules  | -/2   |          |
-|   along with transpiled files
-
-### Git (4/24)
-
-| Criteria                                     | Score | Comments |
-| -------------------------------------------- | ----- | -------- |
-| Commits are pushed to GitHub regularly       | -/2   |          |
-| Commit messages clearly describe the changes | -/2   |          |
-
-### Deductions
-
-Points may be deducted if you are unable to complete a requirement without full direction from an instructor or a fellow. Points may also be deducted for any "hacks" or solutions to problems that do not properly employ the tools at hand (ex. directly modifying the DOM instead of allowing React to modify it for you). Any deductions will be documented below:
-
----
-
-## Comments
-
-_Comments from your instructor or fellow will go here_
-
-## Evaluation
-
-- Requirements score (59 points total, weighted at 70% of total grade)
-- Rubric score (24 points total, weighted at 30% of total grade)
-- Extra credit (15 points total, for an additional 15% max)
-
-- RAW REQUIREMENT SCORE: __
-- RAW RUBRIC SCORE: __
-- RAW EC SCORE: __
-- DEDUCTIONS: __
-
-- TOTAL: __
-
-```javascript
-const getTotal = (rawRequirementScore, rawRubricScore, rawExtraCredit, deductions) => {
-  const totalRequirementScore = ((rawRequirementScore/59) * 100) * 0.7
-  const totalRubricScore = ((rawRubricScore/24) * 100) * 0.3
-  const totalExtraCredit = ((rawExtraCredit/15) * 100) * 0.15
-
-  const total = totalRequirementScore + totalRubricScore + totalExtraCredit - deductions
-  return total
-}
-```
+### Updating Students and Campuses (20 points)
+- A user can update a student with a form on the students detail page
+- A user can update a campus with a form on the campuses listing page
