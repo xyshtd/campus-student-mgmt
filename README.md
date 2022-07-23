@@ -47,7 +47,7 @@ You can determine views and functionality from the requirements and wireframes s
 
 - [ ] Write a sync function which sync's and seeds your database when your application starts 
 
-### Tier 1: All Campuses and Students (26/59)
+### Tier 1: All Campuses and Students
 
 - [ ] Display the campuses component when the url matches `/campuses`
 - [ ] Display the students component when the url matches `/students`
@@ -69,7 +69,7 @@ You can determine views and functionality from the requirements and wireframes s
 - [ ] Students may be associated with at most one campus. Likewise, campuses may be associated with many students
 
 
-### Tier 2: Single Student and Single Campus (10/59)
+### Tier 2: Single Student and Single Campus
 
 
 - Write a component to display a single campus with the following information:
@@ -88,7 +88,7 @@ You can determine views and functionality from the requirements and wireframes s
 - [ ] Clicking on the name of a campus in the student view should navigate to show that campus in the campus view
 
 
-### Tier 3: Adding a Campus and Adding a Student (8/59)
+### Tier 3: Adding a Campus and Adding a Student
 
 
 #### Frontend
@@ -108,7 +108,7 @@ You can determine views and functionality from the requirements and wireframes s
 
 
 
-### Tier 4: Removing a Campus and Removing a Student (6/59)
+### Tier 4: Removing a Campus and Removing a Student
 
 
 #### Frontend
@@ -125,7 +125,7 @@ You can determine views and functionality from the requirements and wireframes s
   - [ ] Remove the student from the list of students without needing to refresh the page
 
 
-### Tier 5: Updating a Campus and Updating a Student (9/59)
+### Tier 5: Updating a Campus and Updating a Student
 
 
 #### Frontend
@@ -145,46 +145,17 @@ You can determine views and functionality from the requirements and wireframes s
 
 
 
-### Bonus Tier: Finishing Touches (15 EC)
+### Bonus Tier: Finishing Touches
 
-
-
-#### Finishing Touches
-
-- [ ] If a user attempts to add a new student or campus without a required field, a helpful message should be displayed
-- [ ] If a user attempts to access a page that doesn't exist (ex. `/potato`), a helpful "not found" message should be displayed
-- [ ] If a user attempts to view a student/campus that doesn't exist, a helpful message should be displayed
-- [ ] Whenever a component needs to wait for data to load from the server, a "loading" message should be displayed until the data is available
-- [ ] Overall, the app is spectacularly styled and visually stunning
-
-#### Ordering
-
-- [ ] Create option for students to be ordered based on lastName on all-students view
-- [ ] Create option for students to be ordered based on GPA on all-students view
-- [ ] Create option for campuses to be ordered based on number of enrolled students on all-campuses view
-
-#### Filtering
-
-- [ ] Create a filter on all-students view to only show students who are not registered to a campus
-- [ ] Create a filter on the all-campuses view to only show campuses that do not have any registered students
-
-#### Seeding & Pagination
-
-- [ ] Seed 100+ students and 100+ campuses
-- [ ] Implement _front-end_ pagination for the students view (e.g. `/students?page=1` renders the first ten students, and `/students?page=2` renders students 11-20)
-- [ ] Implement _front-end_ pagination for the campuses view (e.g. `/campuses?page=1` renders the first ten campuses, and `/campuses?page=2` renders campuses 11-20)
-- [ ] Implement _back-end_ pagination for students (e.g. `/api/students?page=1` returns the first ten students' data, and `/api/students?page=2` returns students 11-20)
-- [ ] Implement _back-end_ pagination for campuses (e.g. `/api/campuses?page=1` returns the first ten campuses' data, and `/api/campuses?page=2` returns campuses 11-20)
-
-
-* `RUBRIC.md` - contains the grading rubric for additional factors, as well as the formula for calculating the total score
+- [ ] Add a search bar which will take the user to a search page which will contain links for students and campuses
+- [ ] Add paging for the students and campuses list (you might need to seed more data)
+- [ ] Add a limitation to the number of students who can be enrolled at the campus and enforce the requirement using sequelize hooks
+- [ ] Add the ability for a user to save an image of the student or campus to the database
 
 
 
 
 
-## Evaluation
 
-- Requirements score (70%)
-- Rubric score (30%)
-- Extra credit (15% max)
+
+
