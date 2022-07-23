@@ -6,21 +6,13 @@
 | 1     | Criteria met inconsistently |
 | 2     | Criteria met consistently   |
 
-### Frontend (6/24)
+### Listing Pages
+- User can view the students and the campuses
+- On the students listing, if a student has a campus, the campus name is shown
+- On the campuses listing, the number of enrollments is shown next to the campus
 
-| Criteria                                                                   | Score | Comments |
-| -------------------------------------------------------------------------- | ----- | -------- |
-| Uses thunks to encapsulate AJAX requests for redux store                   | -/2   |          |
-| Avoids side effects/mutations in reducers and in renders                   | -/2   |          |
-| Takes advantage of components to enforce modularity/separation of concerns | -/2   |          |
+### Detail Pages
 
-### Backend (6/24)
-
-| Criteria                                                                                                 | Score | Comments |
-| -------------------------------------------------------------------------------------------------------- | ----- | -------- |
-| Properly handles errors in routes (i.e. by passing them to `next`)                                       | -/2   |          |
-| Properly manages control flow in routes (i.e. does not send more than one response for the same request) | -/2   |          |
-| Selects appropriate data types for database columns                                                      | -/2   |          |
 
 ### Code Cleanliness/Maintainability (8/24)
 
