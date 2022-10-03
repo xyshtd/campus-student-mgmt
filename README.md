@@ -45,47 +45,47 @@ You can determine views and functionality from the requirements and wireframes s
 
 #### Seed
 
-- [ ] Write a sync function which sync's and seeds your database when your application starts 
+- [x] Write a sync function which sync's and seeds your database when your application starts 
 
 ### Tier 1: All Campuses and Students
 
-- [ ] Display the campuses component when the url matches `/campuses`
-- [ ] Display the students component when the url matches `/students`
-- [ ] Add a links to the navbar that can be used to navigate to the campuses view and the students view
+- [x] Display the campuses component when the url matches `/campuses`
+- [x] Display the students component when the url matches `/students`
+- [x] Add a links to the navbar that can be used to navigate to the campuses view and the students view
 
 #### Backend Requirements
 
 - Write a `campuses` model with the following information:
-  - [ ] name - not empty or null
-  - [ ] imageUrl - string can be null 
-  - [ ] address - not empty or null
-  - [ ] description - extremely large text
+  - [x] name - not empty or null
+  - [x] imageUrl - string can be null 
+  - [x] address - not empty or null
+  - [x] description - extremely large text
 - Write a `students` model with the following information:
-  - [ ] firstName - not empty or null
-  - [ ] lastName - not empty or null
-  - [ ] email - not empty or null; must be a valid email
-  - [ ] imageUrl - string can be null 
-  - [ ] gpa - decimal between 0.0 and 4.0
-- [ ] Students may be associated with at most one campus. Likewise, campuses may be associated with many students
+  - [x] firstName - not empty or null
+  - [x] lastName - not empty or null
+  - [x] email - not empty or null; must be a valid email
+  - [x] imageUrl - string can be null 
+  - [x] gpa - decimal between 0.0 and 4.0
+- [x] Students may be associated with at most one campus. Likewise, campuses may be associated with many students
 
 
 ### Tier 2: Single Student and Single Campus
 
 
 - Write a component to display a single campus with the following information:
-  - [ ] The campus's name, image, address and description
+  - [x] The campus's name, image, address and description
   - [ ] A list of the names of all students in that campus (or a helpful message if it doesn't have any students)
-- [ ] Display the appropriate campus's info when the url matches `/campuses/:campusId`
-- [ ] Clicking on a campus from the campuses view should navigate to show that campus
+- [x] Display the appropriate campus's info when the url matches `/campuses/:campusId`
+- [x] Clicking on a campus from the campuses view should navigate to show that campus
 
 - Write a component to display a single student with the following information:
-  - [ ] The student's full name, email, image, and gpa
-  - [ ] The name of their campus (or a helpful message if they don't have one)
-- [ ] Display the appropriate student when the url matches `/students/:studentId`
-- [ ] Clicking on a student from the students view should navigate to show that student
+  - [x] The student's full name, email, image, and gpa
+  - [x] The name of their campus (or a helpful message if they don't have one)
+- [x] Display the appropriate student when the url matches `/students/:studentId`
+- [x] Clicking on a student from the students view should navigate to show that student
 
-- [ ] Clicking on the name of a student in the campus view should navigate to show that student in the student view
-- [ ] Clicking on the name of a campus in the student view should navigate to show that campus in the campus view
+- [x] Clicking on the name of a student in the campus view should navigate to show that student in the student view
+- [x] Clicking on the name of a campus in the student view should navigate to show that campus in the campus view
 
 
 ### Tier 3: Adding a Campus and Adding a Student
@@ -93,18 +93,18 @@ You can determine views and functionality from the requirements and wireframes s
 
 #### Frontend
 
-- [ ] Write a component to display a form for adding a new campus that contains inputs for _at least_ the name and address.
-- [ ] Display this component as part of the campuses view, alongside the list of campuses
+- [x] Write a component to display a form for adding a new campus that contains inputs for _at least_ the name and address.
+- [x] Display this component as part of the campuses view, alongside the list of campuses
 - Submitting the form with a valid name/address should:
 
-  - [ ] Make an AJAX request that causes the new campus to be persisted in the database
-  - [ ] Add the new campus to the list of campuses without needing to refresh the page
+  - [x] Make an AJAX request that causes the new campus to be persisted in the database
+  - [x] Add the new campus to the list of campuses without needing to refresh the page
 
-- [ ] Write a component to display a form for adding a new student that contains inputs for _at least_ first name, last name and email
-- [ ] Display this component as part of the students view, alongside the list of students
+- [x] Write a component to display a form for adding a new student that contains inputs for _at least_ first name, last name and email
+- [x] Display this component as part of the students view, alongside the list of students
 - Submitting the form with a valid first name/last name/email should:
-  - [ ] Make an AJAX request that causes the new student to be persisted in the database
-  - [ ] Add the new student to the list of students without needing to refresh the page
+  - [x] Make an AJAX request that causes the new student to be persisted in the database
+  - [x] Add the new student to the list of students without needing to refresh the page
 
 
 
@@ -113,16 +113,16 @@ You can determine views and functionality from the requirements and wireframes s
 
 #### Frontend
 
-- [ ] In the campuses view, include an `X` button next to each campus
+- [x] In the campuses view, include an `X` button next to each campus
 - Clicking the `X` button should:
 
-  - [ ] Make an AJAX request that causes that campus to be removed from database
-  - [ ] Remove the campus from the list of campuses without needing to refresh the page
+  - [x] Make an AJAX request that causes that campus to be removed from database
+  - [x] Remove the campus from the list of campuses without needing to refresh the page
 
-- [ ] In the students view, include an `X` button next to each student
+- [x] In the students view, include an `X` button next to each student
 - Clicking the `X` button should:
-  - [ ] Make an AJAX request that causes that student to be removed from database
-  - [ ] Remove the student from the list of students without needing to refresh the page
+  - [x] Make an AJAX request that causes that student to be removed from database
+  - [x] Remove the student from the list of students without needing to refresh the page
 
 
 ### Tier 5: Updating a Campus and Updating a Student
@@ -130,18 +130,18 @@ You can determine views and functionality from the requirements and wireframes s
 
 #### Frontend
 
-- [ ] Write a component to display a form updating _at least_ a campus's name and address
-- [ ] Display this component as part of the campus view
+- [x] Write a component to display a form updating _at least_ a campus's name and address
+- [x] Display this component as part of the campus view
 - Submitting the form with valid data should:
-  - [ ] Make an AJAX request that causes that campus to be updated in the database
-  - [ ] Update the campus in the current view without needing to refresh the page
+  - [x] Make an AJAX request that causes that campus to be updated in the database
+  - [x] Update the campus in the current view without needing to refresh the page
 - [ ] In the campus view, display an `Unregister` button next to each of its students, which removes the student from the campus (in the database as well as this view); hint: the student is still in the database but is no longer associated with the campus
 
-- [ ] Write a component to display a form updating a student
-- [ ] Display this component as part of the student view
+- [x] Write a component to display a form updating a student
+- [x] Display this component as part of the student view
 - Submitting the form with valid data should:
-  - [ ] Make an AJAX request that causes that student to be updated in the database
-  - [ ] Update the student in the current view without needing to refresh the page
+  - [x] Make an AJAX request that causes that student to be updated in the database
+  - [x] Update the student in the current view without needing to refresh the page
 
 
 
@@ -151,12 +151,4 @@ You can determine views and functionality from the requirements and wireframes s
 - [ ] Add a search bar which will take the user to a search page which will contain links for students and campuses
 - [ ] Add paging for the students and campuses list (you might need to seed more data)
 - [ ] Add a limitation to the number of students who can be enrolled at the campus and enforce the requirement using sequelize hooks
-- [ ] Add the ability for a user to save an image of the student or campus to the database
-
-
-
-
-
-
-
-
+- [x] Add the ability for a user to save an image of the student or campus to the database

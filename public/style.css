@@ -1,0 +1,202 @@
+/* GLOBAL FONTS */
+body{
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 2rem;
+  margin:1rem 0;
+}
+
+h3{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h4{
+  font-weight: 400;
+  font-size: 1.2rem; 
+}
+
+h5{
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+p{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+li{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+span{
+  font-size: 1rem;
+  color:#303030;
+  margin-right: 1.5rem;
+}
+
+/* NAV */
+nav{
+  font-size: 1rem;
+  font-weight: 400;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #303030;
+  color:white;
+}
+
+nav img{
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 1rem;
+}
+
+nav a{
+  padding:1rem;
+  color:white;
+  text-decoration: none;
+  margin:0;
+  transition: 0.5s;
+}
+
+nav a:hover{
+  color: #01c0c0;
+}
+
+.selected{
+  background-color: #017e7e;
+  border-radius: 5px;
+}
+
+/* FORMS */
+.campusForm,.studentForm {
+  flex: 1;
+  background-color: #017e7e;
+  color: white;
+  border-radius: 5px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.formFields-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formFields-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.specialButton{
+  font-size: 1rem;
+  font-weight: 600;
+  color:#017e7e;
+  padding: 10px;
+  margin: 1rem 0;
+  border: 1px solid #999999;
+  width:100%
+}
+
+.specialButton[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
+
+input, select, textarea{
+  font-family: 'Poppins';
+  font-size: 0.9rem;
+  margin: 10px 0 20px 0;
+  padding: 5px 10px;
+  
+}
+
+select{
+  width:95%
+}
+
+input{
+  width:90%;
+}
+
+textarea{
+  width:90%; 
+}
+
+label{
+  font-size: 1.1rem;
+}
+
+/* Listing */
+.flexBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.flexBox-column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leftColumn{
+  flex:2;
+}
+
+button{
+  font-family: 'Poppins';
+  font-size: 0.8rem;
+  margin-right:15px;
+  padding: 5px;
+  width: 55px;
+}
+
+.listing{
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.detailCard{
+  display:flex;
+  align-items: flex-start;
+}
+
+.campusImg{
+  width: 280px;
+  height: 210px;
+  margin: 20px 30px 0px 0px;
+}
+
+.studentImg{
+  width: 150px;
+  height: 150px;
+  margin: 20px 30px 0px 0px;
+}
+
