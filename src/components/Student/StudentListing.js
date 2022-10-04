@@ -8,31 +8,36 @@ const StudentListing = ()=>{
   const dispatch = useDispatch();
   const navigate = useNavigate()
   const {students, campuses} = useSelector(state=>state);
-
+  let enrolledStudents = students.filter(student=>student.campusId)
   return (
-    <div className='flexBox'>
-      <div className='leftColumn'>
-      <ul>
-      {
-        students.map( student => {
-          const campus = campuses.find(campus=>campus.id===student.campusId) || {}
-          return (
-            <li key={ student.id } className='listing'>
-              <button onClick={ ()=>dispatch(deleteStudent(student)) }>Delete</button>
-              <button onClick={ ()=>navigate(`/students/${student.id}`) }>Edit</button>
-              { student.fullName}
-              <br />
-              <span>Enrolled in {campus.name || <span className='warning'>no campus</span>} </span>
-              <span><Link to={`/students/${student.id}`}>View Student Details</Link></span>
-            </li>
-          );
-        })
-      }
-    </ul>
+    <>
+      <h3>All Students</h3>
+      <div className='flexBox'>
+        <div className='leftColumn'>
+        <ul>
+        {
+          enrolledStudents.map( student => {
+            const campus = campuses.find(campus=>campus.id===student.campusId) || {}
+            return (
+              <li key={ student.id } className='listing'>
+                <button onClick={ ()=>dispatch(deleteStudent(student)) }>Delete</button>
+                <button onClick={ ()=>navigate(`/students/${student.id}`) }>Edit</button>
+                { student.fullName}
+                <br />
+                <span>Enrolled in {campus.name || <span className='warning'>no campus</span>} </span>
+                <span><Link to={`/students/${student.id}`}>View Student Details</Link></span>
+              </li>
+            );
+          })
+        }
+      </ul>
+      </div>
+      <StudentCreate/>
     </div>
-    <StudentCreate/>
-  </div>
+  </>
   )
 }
 
 export default StudentListing
+// if want unerolled in the view
+//<span>Enrolled in {campus.name || <span className='warning'>no campus</span>} </span>

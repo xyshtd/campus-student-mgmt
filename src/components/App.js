@@ -11,6 +11,7 @@ import CampusListing from './Campus/CampusListing';
 import StudentListing from './Student/StudentListing';
 import CampusDetail from './Campus/CampusDetail';
 import StudentDetail from './Student/StudentDetail';
+import TopCampuses from './Campus/TopCampuses';
 
 const App = ()=>{
   const {campuses,students}= useSelector(state=>state);
@@ -27,7 +28,7 @@ const App = ()=>{
     <Nav campuses = {campuses} students = {students} />
     <h1> Campus Student Management Portal</h1>
     <Routes>
-      <Route path = '/' element ={< CampusListing />}/>
+      <Route path = '/' element ={< TopCampuses />}/>
       <Route path = '/campuses' element ={< CampusListing />}/>
       <Route path = '/students' element ={< StudentListing />}/>
       <Route path = '/campuses/:id' element ={< CampusDetail />}/>

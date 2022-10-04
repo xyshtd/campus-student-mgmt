@@ -1,16 +1,20 @@
 import React from 'react';
 import {useSelector, useDispatch} from 'react-redux'
 import {deleteCampus} from '../../store/campuses';
-import {Link, useNavigate} from 'react-router-dom';
+import {useLocation, Link, useNavigate} from 'react-router-dom';
 import CampusCreate from './CampusCreate';
 
 const CampusListing = ()=>{
   const dispatch = useDispatch();
   let {campuses, students} = useSelector(state=>state);
+  const {pathname} = useLocation();
   const navigate = useNavigate()
+  /* TO EDIT FOR HOMEPAGE */
+  /* Add a home page which lists the top performing campuses based on the average gpa of the enrolled students */
+
+  if (pathname === '/') campuses = campuses.filter(t =>t);
+  
   return (
-    <>
-    <h3>All Campuses</h3>
     <div className='flexBox'>
       <div className='leftColumn'>
         <ul >
@@ -33,7 +37,6 @@ const CampusListing = ()=>{
       </div>
     <CampusCreate/>
   </div>
-  </>
   )
 }
 
