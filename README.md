@@ -74,7 +74,7 @@ You can determine views and functionality from the requirements and wireframes s
 
 - Write a component to display a single campus with the following information:
   - [x] The campus's name, image, address and description
-  - [ ] A list of the names of all students in that campus (or a helpful message if it doesn't have any students)
+  - [x] A list of the names of all students in that campus (or a helpful message if it doesn't have any students)
 - [x] Display the appropriate campus's info when the url matches `/campuses/:campusId`
 - [x] Clicking on a campus from the campuses view should navigate to show that campus
 

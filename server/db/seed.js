@@ -7,7 +7,7 @@ const generateCampuses = (campusNum)=>{
   while(campuses.length<campusNum){
     campuses.push(
       {
-        name:`${faker.address.state()} Campus `,
+        name:`${faker.address.city()} Campus`,
         address:`${faker.address.buildingNumber()} ${faker.address.street()} Street`,
         description:faker.lorem.paragraphs(2),
         imageUrl:faker.image.city()

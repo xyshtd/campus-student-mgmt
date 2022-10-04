@@ -6,7 +6,7 @@ const { Student } = require('../db/associations');
 //get
 router.get('/', async(req, res, next)=> {
   try {
-    res.send(await Student.findAll({order:[['createdAt','DESC']]}));
+    res.send(await Student.findAll({order:[['campusId','ASC']]}));
   }
   catch(ex){
     next(ex);

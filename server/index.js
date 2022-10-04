@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const setup = async()=>{
   try{
     await conn.sync({force:true});
-    await seed(100,10);//studentNum, campusNum
+    await seed(50,5);//studentNum, campusNum
     app.listen(port, ()=> console.log(`listening on port ${port}`));
   }
   catch(ex){

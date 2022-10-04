@@ -15,10 +15,14 @@ const Nav = ({campuses,students})=>{
       </Link>
       <Link to='/' className= { selected('/') }> FEATURED CAMPUSES</Link>
       <Link to='/campuses' className= { selected('/campuses') }>ALL CAMPUSES ({campuses.length})</Link>
-      <Link to='/students' className ={selected('/students')}>ENROLLED STUDENTS ({students.length})</Link>
+      <Link to='/students' className ={selected('/students')}>ALL STUDENTS ({students.length})</Link>
     </nav>
   )
 
 };
 
 export default Nav;
+
+/* 
+<Link to='/students' className ={selected('/students')}>ALL STUDENTS ( {students.length} total | {students.filter(student=>student.campusId).length} enrolled )</Link>
+*/

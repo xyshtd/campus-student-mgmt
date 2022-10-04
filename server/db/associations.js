@@ -4,9 +4,17 @@ const Campus = require('./Campus')
 Campus.hasMany(Student);
 Student.belongsTo(Campus);
 
-/*  Add a limitation to the number of students who can be enrolled at the campus and enforce the requirement using sequelize hooks */
-/*  Add a limitation to the number of students who can be enrolled at the campus and enforce the requirement using sequelize hooks */
-/*  Add a limitation to the number of students who can be enrolled at the campus and enforce the requirement using sequelize hooks */
+Student.beforeCreate(async(student)=> {
+  const students = await Student.findAll({
+    where: {
+      campusId: student.campusId
+    }
+  });
+  if(students.length === 10){
+    throw 'reached the limit of the number of students who can be enrolled at the campus: 10';
+  }
+});
+
 
 module.exports = {
   Student,

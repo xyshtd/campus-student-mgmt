@@ -49,10 +49,8 @@ const StudentUpdate = ()=>{
        }));
     }
     catch(ex){
-      if(ex){
       console.log(ex);
-      setError(ex.response.data || {});
-      }
+      setError(ex.response.data);
     }
   };
 

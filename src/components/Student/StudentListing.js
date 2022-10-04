@@ -22,7 +22,7 @@ const StudentListing = ()=>{
               <button onClick={ ()=>navigate(`/students/${student.id}`) }>Edit</button>
               { student.fullName}
               <br />
-              <span>Enrolled in {campus.name} </span>
+              <span>Enrolled in {campus.name || <span className='warning'>no campus</span>} </span>
               <span><Link to={`/students/${student.id}`}>View Student Details</Link></span>
             </li>
           );

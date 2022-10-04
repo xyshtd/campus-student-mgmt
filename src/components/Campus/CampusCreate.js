@@ -10,11 +10,13 @@ const CampusCreate = ()=>{
     address: '',
     imageUrl: '',
     description:'',
-    error: {}
   };
-  const dispatch = useDispatch()
+
   const [inputs,setInputs]= useState(defaultInputs);
-  const {name, address, imageUrl, description,error} = inputs
+  const {name, address, imageUrl, description} = inputs
+  const [error, setError] = useState({});
+
+  const dispatch = useDispatch()
 
   const onSubmit = async (ev)=> {
     ev.preventDefault();
@@ -24,17 +26,15 @@ const CampusCreate = ()=>{
         address, 
         imageUrl:imageUrl || 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/310px-Placeholder_view_vector.svg.png',
         description: description || 'Description to be Added'
-       }));
-      if (error === {}){
-        setInputs(defaultInputs)
-      }
-       //reset form
+      }));
+
+      //reset form
+      setInputs(defaultInputs)
+      setError({})
     }
     catch(ex){
-      if(ex){
-        console.log(ex);
-        setInputs({...inputs, error: ex.response?.data || {} });
-      }
+      console.log(ex);
+      setError(ex.response.data);;
     }
   };
 
@@ -53,7 +53,7 @@ const CampusCreate = ()=>{
       description = {description}
       onSubmit = {onSubmit}
       onChange = {onChange}
-      error= { error }
+      error= {error}
       buttonLabel = 'Create'
       className = 'formFields-column'
       formTitle= 'Add a Campus'

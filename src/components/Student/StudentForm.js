@@ -24,7 +24,7 @@ const StudentForm = ({firstName,lastName,email,campusId,campuses,imageUrl,gpa,on
         <div style ={{flex:1}}>
           <div>
           <label>Campus *</label><br />
-          <select name="campusId" value = {campusId}  onChange = {onChange}>
+          <select name="campusId" value = {campusId || ''}  onChange = {onChange}>
           <option value = ''>--- select ---</option>
           {campuses.map(campus=><option key = {campus.id} value = {campus.id}> {campus.name}</option>)}
           </select>
