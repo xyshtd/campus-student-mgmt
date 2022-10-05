@@ -19,11 +19,15 @@ const Search = ()=> {
         <h4>Search</h4>
         <input value={ filter || ''} placeholder='filter' onChange={ev => navigate(`/search/${ev.target.value}`)} />
       </div>
-      <div>
-        <h4 className = 'search'>Campus Search Results</h4>
-        <CampusListing campuses={ filteredCampuses } students={students}/>
-        <h4 className = 'search'>Students Search Results</h4>
-        <StudentListing campuses={ campuses } students={filteredStudents}/>
+      <div className='flexBox'>
+        <div className = 'leftColumn'>
+          <h4 className = 'search'>Campuses Search Results</h4>
+          <CampusListing campuses={ filteredCampuses } students={students}/>
+        </div>
+        <div className = 'rightColumn'>
+          <h4 className = 'search'>Students Search Results</h4>
+          <StudentListing campuses={ campuses } students={filteredStudents}/>
+        </div>
       </div>
     </div>
   );

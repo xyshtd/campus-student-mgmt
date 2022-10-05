@@ -35,6 +35,7 @@ const App = ()=>{
       <Route path = '/students' element ={< AllStudents />}/>
       <Route path = '/campuses/:id' element ={< CampusDetail />}/>
       <Route path = '/students/:id' element ={< StudentDetail />}/>
+      <Route path='/students/bypage/:index' element={ <StudentsByPage /> } />
       <Route path='/search' element={ <Search /> } />
       <Route path='/search/:filter' element={ <Search /> } />
     </Routes>

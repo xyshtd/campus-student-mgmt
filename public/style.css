@@ -169,7 +169,9 @@ label{
 .leftColumn{
   flex:2;
 }
-
+.rightColumn{
+  flex:4;
+}
 button{
   font-family: 'Poppins';
   font-size: 0.8rem;
