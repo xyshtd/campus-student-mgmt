@@ -17,7 +17,7 @@ const CampusDetail = ()=>{
   if (name){
     return (
     <>
-      <div className='listing'>
+      <div className='fullContainer'>
         <h2>{name}</h2>
         <h4>Address: {address}</h4>
         <div className='detailCard'>

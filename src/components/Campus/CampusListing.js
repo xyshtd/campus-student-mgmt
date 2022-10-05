@@ -5,7 +5,8 @@ import {Link, useNavigate} from 'react-router-dom';
 
 const CampusListing = ({campuses,students})=>{
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  
   return (
     <ul >
     {

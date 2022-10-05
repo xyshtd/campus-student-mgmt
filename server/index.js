@@ -19,4 +19,4 @@ setup();
 //if(process.env.SYNC){}
 //package.json
 //"start:dev": "SYNC=true nodemon server",
-// "start:dev:nosync": "nodemon server"
+//"start:dev:nosync": "nodemon server"

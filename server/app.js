@@ -33,7 +33,7 @@ app.use((err, req, res, next) => {
 
 module.exports = app;
 
-/*Error Handing To Be Refactored
+/*Error Handing To Be Refactored - FormErrorMessage component may go here
 catch (err) {
     if (err.name === 'SequelizeValidationError') {
        const errors = err.errors

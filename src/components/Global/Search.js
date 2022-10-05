@@ -16,12 +16,12 @@ const Search = ()=> {
   return (
     <div >
       <div className = 'search'>
-        <h4>Search</h4>
-        <input value={ filter || ''} placeholder='filter' onChange={ev => navigate(`/search/${ev.target.value}`)} />
+        <h2>Search</h2>
+        <input className ='searchBar'value={ filter || ''} placeholder='Search by name - not case sensitive :)' onChange={ev => navigate(`/search/${ev.target.value}`)} />
       </div>
       <div className='flexBox'>
         <div className = 'leftColumn'>
-          <h4 className = 'search'>Campus Search Results</h4>
+          <h4 className = 'search'>Campuses Search Results</h4>
           <CampusListing campuses={ filteredCampuses } students={students}/>
         </div>
         <div className = 'rightColumn'>

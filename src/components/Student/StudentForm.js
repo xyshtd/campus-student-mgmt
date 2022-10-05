@@ -3,7 +3,8 @@ import FormErrorMessage from '../Global/FormErrorMessage';
 
 const StudentForm = ({firstName,lastName,email,campusId,campuses,imageUrl,gpa,onSubmit,onChange,error,buttonLabel,className,formTitle})=>{
   return (
-    <form onSubmit = {onSubmit} className = 'studentForm'>
+    <div className = 'studentForm'>
+    <form onSubmit = {onSubmit} >
       <h3>{formTitle}</h3>
       <FormErrorMessage error={error} />
       <div className = {className}>
@@ -41,6 +42,7 @@ const StudentForm = ({firstName,lastName,email,campusId,campuses,imageUrl,gpa,on
       </div>
       <button disabled = {!firstName|| !lastName || !email || !campusId} className='specialButton'>{buttonLabel}</button>
     </form>
+    </div>
   );
 };
 

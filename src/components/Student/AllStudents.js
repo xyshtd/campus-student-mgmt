@@ -11,7 +11,7 @@ const AllStudents = ()=>{
   return (
     <>
     <h3>All Students</h3>
-    <h5><Link to ={'/students/page/0'}> View By Page </Link></h5>
+    <h5><Link to ={'/students/page/0'} className='viewLink'> View By Page </Link></h5>
     <div className='flexBox'>
       <div className='leftColumn'>
       <StudentListing campuses={campuses} students={enrolledStudents}/>

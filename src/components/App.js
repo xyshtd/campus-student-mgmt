@@ -1,19 +1,21 @@
 import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
 import { Route, Routes} from 'react-router-dom';
+
+import Nav from './Global/Nav'
+import Footer from './Global/Footer';
+import Search from './Global/Search';
+import PageNotFound from './Global/PageNotFound';
+import AllCampuses from './Campus/AllCampuses';
+import CampusDetail from './Campus/CampusDetail';
+import TopCampuses from './Campus/TopCampuses';
+import AllStudents from './Student/AllStudents';
+import StudentDetail from './Student/StudentDetail';
+import StudentsByPage from './Student/StudentsByPage'
+
 
 import { fetchCampuses } from '../store/campuses';
 import { fetchStudents } from '../store/students';
-
-import Nav from './Global/Nav'
-import AllCampuses from './Campus/AllCampuses';
-import AllStudents from './Student/AllStudents';
-import CampusDetail from './Campus/CampusDetail';
-import StudentDetail from './Student/StudentDetail';
-import TopCampuses from './Campus/TopCampuses';
-import Search from './Global/Search';
-import StudentsByPage from './Student/StudentsByPage'
 
 
 const App = ()=>{
@@ -36,10 +38,12 @@ const App = ()=>{
       <Route path = '/students' element ={< AllStudents />}/>
       <Route path = '/campuses/:id' element ={< CampusDetail />}/>
       <Route path = '/students/:id' element ={< StudentDetail />}/>
-      <Route path='/students/page/:index' element={ <StudentsByPage/> } />
+      <Route path='/students/page/:index' element={ <StudentsByPage/>} />
       <Route path='/search' element={ <Search /> } />
       <Route path='/search/:filter' element={ <Search /> } />
+      <Route path='*' element={ <PageNotFound />} />
     </Routes>
+    <Footer />
     </>
   );
 };

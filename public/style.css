@@ -48,15 +48,24 @@ li{
 }
 
 span{
-  font-size: 1rem;
+  font-size:1rem;
   color:#303030;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+  line-height: 1rem;
+}
+
+a{
+  color:#017e7e
+}
+a:hover{
+  color:#01c0c0
 }
 
 /* NAV */
 nav{
   font-size: 1rem;
   font-weight: 400;
+  flex-wrap: wrap;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -92,12 +101,28 @@ nav a:hover{
   font-weight: 300;
   display:flex;
   justify-content: space-around;
+  flex-wrap:wrap;
   align-items: center;
-  margin: 1rem 0;
+  margin: 3rem 0 1rem 0;
   background-color: #575757;
   color:white;
 }
-
+.viewLink:link{
+  color:#017e7e;
+  background-color: #017e7e;
+  text-align: center;
+  color:white;
+  padding:10px;
+  text-decoration:none;
+  border-radius: 5px;
+}
+.viewLink:visited{
+  color:white;
+}
+.viewLink:hover{
+  background-color:#01c0c0;
+}
+  
 /* FORMS */
 .campusForm,.studentForm {
   flex: 1;
@@ -140,11 +165,10 @@ input, select, textarea{
   font-size: 0.9rem;
   margin: 10px 0 20px 0;
   padding: 5px 10px;
-  
 }
 
 select{
-  width:95%
+  width:96%
 }
 
 input{
@@ -160,8 +184,11 @@ label{
 }
 
 .search{
-  margin-left:4rem;
+  margin-left:2rem;
   text-align: left;
+}
+.searchBar{
+  width: 300px; 
 }
 
 /* Listing */
@@ -181,7 +208,7 @@ label{
   flex:2;
 }
 .rightColumn{
-  flex:4;
+  flex:2;
 }
 button{
   font-family: 'Poppins';
@@ -206,7 +233,7 @@ li{
   color:tomato
 }
 
-.listing{
+.fullContainer{
   list-style: none;
   font-size: 1.5rem;
   font-weight: 500;
@@ -214,6 +241,16 @@ li{
   border-radius: 5px;
   padding: 1rem;
   margin: 2rem;
+}
+
+.listing{
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 2rem 2rem 2rem 0;
 }
 
 .detailCard{
@@ -231,5 +268,63 @@ li{
   width: 150px;
   height: 150px;
   margin: 20px 30px 0px 0px;
+}
+
+/* Footer */
+.footer{
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  background-color: #303030;
+  color:white;
+  padding:2rem;
+}
+
+.footer img{
+  width: 100px;
+}
+
+.footer a:link{
+  font-size: 0.9rem;
+  color:white;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color:#01c0c0
+}
+
+
+.footer p{
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.pageNotFound{
+  margin: 2rem;
+}
+.pageNotFound a{
+  text-decoration: none;
+}
+
+
+/* small screen */
+@media (max-width:760px){
+  nav, .formFields-row, .Pagination, .flexBox{
+    flex-direction: column;
+  }
+  .listing{
+    flex:1
+  }
+  .campusForm,.studentForm{
+    width: 400px;
+    align-self: center;
+  }
+  .leftColumn, .rightColumn{
+    width:100%
+  }
 }
 

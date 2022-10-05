@@ -13,7 +13,7 @@ const StudentDetail = ()=>{
   
   return (
   <>
-    <div className='detailCard listing'>
+    <div className='fullContainer detailCard'>
       <img src={imageUrl} className = 'studentImg' alt='student image'/>
       <div>
         <h2>{fullName}</h2>
