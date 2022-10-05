@@ -32,6 +32,7 @@ h4{
 h5{
   font-weight: 400;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 p{
@@ -85,6 +86,16 @@ nav a:hover{
 .selected{
   background-color: #017e7e;
   border-radius: 5px;
+}
+.Pagination{
+  font-size: 0.9rem;
+  font-weight: 300;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #575757;
+  color:white;
 }
 
 /* FORMS */
