@@ -20,7 +20,7 @@ const CampusUpdate = ()=>{
   const [error, setError] = useState({});
 
   useEffect(()=> {
-    const campus = campuses.find(campus => campus.id === id*1) || {};
+    const campus = campuses.find(campus => campus.id === id*1);
     if(campus){
       setInputs({
         name:campus.name,

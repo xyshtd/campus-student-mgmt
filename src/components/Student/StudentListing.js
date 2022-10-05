@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch} from 'react-redux'
-import {deleteStudent} from '../../store/students';
+import {deleteStudent , fetchStudents} from '../../store/students';
 import {Link, useNavigate} from 'react-router-dom';
 
 const StudentListing = ({campuses,students})=>{

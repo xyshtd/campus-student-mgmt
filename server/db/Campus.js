@@ -1,4 +1,4 @@
-const { STRING, TEXT, CHAR} = require("sequelize");
+const { STRING, TEXT, CHAR, VIRTUAL} = require("sequelize");
 const {conn} = require('.')
 
 

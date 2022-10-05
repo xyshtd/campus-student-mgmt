@@ -1,28 +1,29 @@
 import React,{ useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateStudent } from '../../store/students';
+import { fetchStudents, updateStudent } from '../../store/students';
 import StudentForm from './StudentForm';
 import {useParams} from 'react-router-dom';
 
-const defaultInputs = {
-  firstName:'',
-  lastName:'',
-  email:'',
-  imageUrl:'',
-  gpa:'',
-  campusId:''
-};
-
 const StudentUpdate = ()=>{
+  const defaultInputs = {
+    firstName:'',
+    lastName:'',
+    email:'',
+    imageUrl:'',
+    gpa:'',
+    campusId:''
+  };
+  
   const dispatch = useDispatch()
   const {id} = useParams()
   const {campuses, students} = useSelector(state=>state);
   const [inputs,setInputs]= useState(defaultInputs);
   const {firstName, lastName, email, imageUrl, gpa, campusId} = inputs
   const [error, setError] = useState({});
+  const [campusName,setCampusName] = useState('')
 
   useEffect(()=> {
-    const student = students.find( student => student.id === id) || {};
+    const student = students.find( student => student.id === id);
     if(student){
       setInputs({
         firstName:student.firstName,
@@ -47,10 +48,13 @@ const StudentUpdate = ()=>{
         gpa: gpa || 0.0,
         campusId
        }));
+      dispatch(fetchStudents())
     }
     catch(ex){
-      console.log(ex);
-      setError(ex.response.data);
+      if(ex){
+        console.log(ex);
+        setError(ex.response.data);
+      }
     }
   };
 

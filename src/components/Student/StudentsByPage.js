@@ -5,7 +5,7 @@ import StudentCreate from './StudentCreate';
 import { Link, useParams} from 'react-router-dom';
 
 
-const AllStudents = ()=>{
+const StudentsByPage = ()=>{
   const {students, campuses} = useSelector(state=>state);
   const enrolledStudents = students.filter(student=>student.campusId)
   /* Pagination elements */
@@ -57,4 +57,4 @@ const AllStudents = ()=>{
   )
 }
 
-export default AllStudents
+export default StudentsByPage
