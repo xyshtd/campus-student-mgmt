@@ -20,6 +20,7 @@ const StudentUpdate = ()=>{
   const [inputs,setInputs]= useState(defaultInputs);
   const {firstName, lastName, email, imageUrl, gpa, campusId} = inputs
   const [error, setError] = useState({});
+  const [error2, setError2] = useState('');
   const [campusName,setCampusName] = useState('')
 
   useEffect(()=> {
@@ -51,10 +52,10 @@ const StudentUpdate = ()=>{
       dispatch(fetchStudents())
     }
     catch(ex){
-      if(ex){
-        console.log(ex);
-        setError(ex.response.data);
-      }
+      console.log(ex);
+      //error2 is the reach student limit per campus error
+      if (typeof ex.response.data =='string') setError2(ex.response.data)
+      setError(ex.response.data)
     }
   };
 
@@ -78,6 +79,7 @@ const StudentUpdate = ()=>{
       onSubmit = {onSubmit}
       onChange = {onChange}
       error= { error }
+      error2 = {error2}
       buttonLabel = 'Update'
       className='formFields-row'
       formTitle = 'Edit Student Info'

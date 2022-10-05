@@ -1,11 +1,12 @@
 import React from 'react';
 import FormErrorMessage from '../Global/FormErrorMessage';
 
-const StudentForm = ({firstName,lastName,email,campusId,campuses,imageUrl,gpa,onSubmit,onChange,error,buttonLabel,className,formTitle})=>{
+const StudentForm = ({firstName,lastName,email,campusId,campuses,imageUrl,gpa,onSubmit,onChange,error,error2,buttonLabel,className,formTitle})=>{
   return (
     <div className = 'studentForm'>
     <form onSubmit = {onSubmit} >
       <h3>{formTitle}</h3>
+      <p>{error2}</p>
       <FormErrorMessage error={error} />
       <div className = {className}>
         <div style ={{flex:1}}>

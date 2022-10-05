@@ -16,6 +16,7 @@ const StudentCreate = ()=>{
   const [inputs,setInputs]= useState(defaultInputs);
   const {firstName, lastName, email, imageUrl, gpa, campusId} = inputs
   const [error, setError] = useState({});
+  const [error2, setError2] = useState('');
   const {campuses} = useSelector(state=>state)
 
   const dispatch = useDispatch()
@@ -35,10 +36,13 @@ const StudentCreate = ()=>{
       //reset form
       setInputs(defaultInputs) 
       setError({})
+      setError2('')
     }
     catch(ex){
       console.log(ex);
-      setError(ex.response.data);
+      //error2 is the reach student limit per campus error
+      if (typeof ex.response.data =='string') setError2(ex.response.data)
+      setError(ex.response.data)
     }
   };
 
@@ -62,6 +66,7 @@ const StudentCreate = ()=>{
       onSubmit = {onSubmit}
       onChange = {onChange}
       error= {error}
+      error2= {error2}
       buttonLabel = 'Create'
       className='formFields-column'
       formTitle = 'Add a Student'

@@ -35,7 +35,8 @@ const Student = conn.define('student', {
     validate:{
       notEmpty:true,
       isEmail: {
-        msg:'Not a valid Email'}
+        msg:'Not a valid Email'
+      }
     }
   },
   imageUrl:{
@@ -51,8 +52,14 @@ const Student = conn.define('student', {
   gpa:{
     type: DECIMAL,
     validate:{
-      max:4.0,
-      min:0.0
+      max: {
+        args: [4.0],
+        msg: 'GPA should be between 0.0 - 4.0'
+      },
+      min: {
+        args: [0.0],
+        msg: 'GPA should be between 0.0 - 4.0'
+      },
     }
   } 
 })
