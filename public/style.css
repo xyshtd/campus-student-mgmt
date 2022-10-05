@@ -116,7 +116,7 @@ nav a:hover{
   padding: 10px;
   margin: 1rem 0;
   border: 1px solid #999999;
-  width:95%
+  width:98%
 }
 
 .specialButton[disabled]{
@@ -146,6 +146,11 @@ textarea{
 
 label{
   font-size: 1.1rem;
+}
+
+.search{
+  margin-left:4rem;
+  text-align: left;
 }
 
 /* Listing */

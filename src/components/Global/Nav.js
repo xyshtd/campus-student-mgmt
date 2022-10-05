@@ -10,12 +10,11 @@ const Nav = ({campuses,students})=>{
 
   return (
     <nav>
-      <Link to='/'>
-        <img src='../public/NH_logo_white.png'/>
-      </Link>
+      <Link to='/'><img src='../public/NH_logo_white.png'/></Link>
       <Link to='/' className= { selected('/') }> TOP PERFORMING CAMPUSES</Link>
       <Link to='/campuses' className= { selected('/campuses') }>ALL CAMPUSES ({campuses.length})</Link>
       <Link to='/students' className ={selected('/students')}>ENROLLED STUDENTS ({students.filter(student=>student.campusId).length})</Link>
+      <Link to='/search'>SEARCH</Link>
     </nav>
   )
 

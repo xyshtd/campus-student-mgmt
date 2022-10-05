@@ -7,11 +7,13 @@ import { fetchCampuses } from '../store/campuses';
 import { fetchStudents } from '../store/students';
 
 import Nav from './Global/Nav'
-import CampusListing from './Campus/CampusListing';
+import AllCampuses from './Campus/AllCampuses';
 import StudentListing from './Student/StudentListing';
 import CampusDetail from './Campus/CampusDetail';
 import StudentDetail from './Student/StudentDetail';
 import TopCampuses from './Campus/TopCampuses';
+import Search from './Global/Search';
+import AllStudents from './Student/AllStudents';
 
 const App = ()=>{
   const {campuses,students}= useSelector(state=>state);
@@ -29,10 +31,12 @@ const App = ()=>{
     <h1> Campus Student Management Portal</h1>
     <Routes>
       <Route path = '/' element ={< TopCampuses />}/>
-      <Route path = '/campuses' element ={< CampusListing />}/>
-      <Route path = '/students' element ={< StudentListing />}/>
+      <Route path = '/campuses' element ={< AllCampuses />}/>
+      <Route path = '/students' element ={< AllStudents />}/>
       <Route path = '/campuses/:id' element ={< CampusDetail />}/>
       <Route path = '/students/:id' element ={< StudentDetail />}/>
+      <Route path='/search' element={ <Search /> } />
+      <Route path='/search/:filter' element={ <Search /> } />
     </Routes>
     </>
   );

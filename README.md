@@ -148,7 +148,7 @@ You can determine views and functionality from the requirements and wireframes s
 ### Bonus Tier: Finishing Touches
 
 - [ ] Add a home page which lists the top performing campuses based on the average gpa of the enrolled students
-- [ ] Add a search bar which will take the user to a search page which will contain links for students and campuses
+- [x] Add a search bar which will take the user to a search page which will contain links for students and campuses
 - [ ] Add paging for the students and campuses list (you might need to seed more data)
 - [ ] Add a limitation to the number of students who can be enrolled at the campus and enforce the requirement using sequelize hooks
 - [x] Add the ability for a user to save an image of the student or campus to the database
