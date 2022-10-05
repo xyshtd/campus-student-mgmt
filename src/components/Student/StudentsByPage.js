@@ -28,7 +28,7 @@ const StudentsByPage = ()=>{
 
   return (
     <>
-    <h3>All Students</h3>
+    <h3>Enrolled Students</h3>
     <h5><Link to ={'/students'} className='viewLink'>View All</Link></h5>
     <nav className = 'Pagination'>
     <Link to={`/students/page/${index-1 > 0 ? index-1 : 0}`}> Prev</Link>

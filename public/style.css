@@ -313,7 +313,7 @@ li{
 
 /* small screen */
 @media (max-width:760px){
-  nav, .formFields-row, .Pagination, .flexBox{
+  nav, .formFields-row, .Pagination, .flexBox, .detailCard{
     flex-direction: column;
   }
   .listing{

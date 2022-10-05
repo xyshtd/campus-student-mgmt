@@ -10,7 +10,7 @@ const AllStudents = ()=>{
   const enrolledStudents = students.filter(student=>student.campusId)
   return (
     <>
-    <h3>All Students</h3>
+    <h3>Enrolled Students</h3>
     <h5><Link to ={'/students/page/0'} className='viewLink'> View By Page </Link></h5>
     <div className='flexBox'>
       <div className='leftColumn'>
