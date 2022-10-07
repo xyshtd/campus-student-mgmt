@@ -1,11 +1,12 @@
 import React from 'react';
 import {useSelector,useDispatch} from 'react-redux'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import StudentListing from '../Student/StudentListing';
 
 
 const TopCampuses = ()=>{
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const {campuses, students} = useSelector(state=>state);
   const topStudents = students.sort((a,b)=>b.gpa-a.gpa).slice(0,10)
   
