@@ -13,8 +13,8 @@ const Nav = ({campuses,students})=>{
       <Link to='/'><img src='../public/NH_logo_white.png'/></Link>
       <Link to='/' className= { selected('/') }> HOME</Link>
       <Link to='/campuses' className= { selected('/campuses') }>ALL CAMPUSES ({campuses.length})</Link>
-      <Link to='/students' className ={selected('/students')}>ENROLLED STUDENTS ({students.filter(student=>student.campusId).length})</Link>
-      <Link to='/search' className ={selected('/search')}>SEARCH</Link>
+      <Link to='/students' className ={ selected('/students') }>ENROLLED STUDENTS ({students.filter(student=>student.campusId).length})</Link>
+      <Link to='/search' className ={ selected('/search') }>SEARCH</Link>
     </nav>
   )
 
