@@ -42,7 +42,7 @@ const StudentCreate = ()=>{
       console.log(ex);
       //error2 is the reach student limit per campus error
       if (typeof ex.response.data =='string') setError2(ex.response.data)
-      setError(ex.response.data)
+      else setError(ex.response.data)
     }
   };
 

@@ -12,11 +12,11 @@ const StudentForm = ({firstName,lastName,email,campusId,campuses,imageUrl,gpa,on
         <div style ={{flex:1}}>
           <div>
             <label>First Name *</label><br />
-            <input name = 'firstName' value = {firstName} onChange = {onChange} />
+            <input placeholder = 'First Name' name = 'firstName' value = {firstName} onChange = {onChange} />
           </div>
           <div>
             <label>Last Name *</label><br />
-            <input name = 'lastName' value = {lastName} onChange = {onChange} />
+            <input placeholder = 'Last Name' name = 'lastName' value = {lastName} onChange = {onChange} />
           </div>
           <div>
             <label>Email *</label><br />

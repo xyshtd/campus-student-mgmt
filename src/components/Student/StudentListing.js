@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch} from 'react-redux'
-import {deleteStudent , fetchStudents} from '../../store/students';
+import {deleteStudent} from '../../store/students';
 import {Link, useNavigate} from 'react-router-dom';
 
 const StudentListing = ({campuses,students})=>{
@@ -28,5 +28,5 @@ const StudentListing = ({campuses,students})=>{
 }
 
 export default StudentListing
-// if want unerolled in the view
+// if want unenrolled in the view
 //<span>Enrolled in {campus.name || <span className='warning'>no campus</span>} </span>

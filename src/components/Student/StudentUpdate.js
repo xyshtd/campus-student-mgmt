@@ -54,7 +54,7 @@ const StudentUpdate = ()=>{
       console.log(ex);
       //error2 is the reach student limit per campus error
       if (typeof ex.response.data =='string') setError2(ex.response.data)
-      setError(ex.response.data)
+      else setError(ex.response.data)
     }
   };
 
@@ -87,3 +87,16 @@ const StudentUpdate = ()=>{
 };
 
 export default StudentUpdate;
+
+/* 
+const [inputs, setInputs] = useState({
+    firstName: student?.firstName || '',
+    lastName: student?.lastName || '',
+    email: student?.email || '',
+    imageUrl: student?.imageUrl || '',
+    gpa: student?.gpa || 0,
+    campusId: student?.campusId,
+  });
+
+
+*/

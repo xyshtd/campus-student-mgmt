@@ -31,7 +31,7 @@ const StudentsByPage = ()=>{
     <h3>Enrolled Students</h3>
     <h5><Link to ={'/students'} className='viewLink'>View All</Link></h5>
     <nav className = 'Pagination'>
-    <Link to={`/students/page/${index-1 > 0 ? index-1 : 0}`}> Prev</Link>
+      <Link to={`/students/page/${index-1 > 0 ? index-1 : 0}`}> Prev</Link>
       {
         pages.map( page => {
           return (
@@ -45,7 +45,7 @@ const StudentsByPage = ()=>{
           );
         })
       }
-    <Link to={`/students/page/${index+1 < count-1 ? index+1 : count-1}`}> Next</Link>
+      <Link to={`/students/page/${index+1 < count-1 ? index+1 : count-1}`}> Next</Link>
     </nav>
     <div className='flexBox'>
       <div className='leftColumn'>

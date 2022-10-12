@@ -1,10 +1,9 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Link, useParams} from 'react-router-dom';
 import StudentUpdate from './StudentUpdate';
 
 const StudentDetail = ()=>{
-  const dispatch = useDispatch();
   const {id} = useParams()
   const {campuses, students} = useSelector(state=>state);
   const {fullName,email,imageUrl,gpa} = students.find(student=>student.id === id) || {}

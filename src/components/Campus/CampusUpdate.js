@@ -49,6 +49,12 @@ const CampusUpdate = ()=>{
     }
   };
 
+  /* const onChange = ({ target: { name, value } }) => {
+    setInputs({
+      ...inputs,
+      [name]: value,
+    });
+  }; */
   const onChange = (ev) => {
     setInputs({
       ...inputs,

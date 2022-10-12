@@ -19,6 +19,9 @@ const campuses = (state = [], action)=> {
 //fetch
 export const fetchCampuses = () => {
   return async(dispatch) => {
+    //or deconstruct & renaming
+    //const {data:campuses} = await axios.get('/api/campuses/')
+    //dispatch({type: "SET_CAMPUSES", campuses})
     const {data} = await axios.get('/api/campuses/')
     dispatch({type: "SET_CAMPUSES", campuses:data})
   }
