@@ -2,6 +2,7 @@ import React from 'react';
 import {useSelector,useDispatch} from 'react-redux'
 import { Link, useNavigate} from 'react-router-dom';
 import StudentListing from '../Student/StudentListing';
+import {deleteCampus} from '../../store/campuses';
 
 
 const TopCampuses = ()=>{

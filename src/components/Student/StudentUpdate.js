@@ -21,7 +21,6 @@ const StudentUpdate = ()=>{
   const {firstName, lastName, email, imageUrl, gpa, campusId} = inputs
   const [error, setError] = useState({});
   const [error2, setError2] = useState('');
-  const [campusName,setCampusName] = useState('')
 
   useEffect(()=> {
     const student = students.find( student => student.id === id);
