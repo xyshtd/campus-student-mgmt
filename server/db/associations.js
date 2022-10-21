@@ -4,7 +4,7 @@ const Campus = require('./Campus')
 Campus.hasMany(Student);
 Student.belongsTo(Campus);
 
-Student.beforeValidate(async(student)=> {
+Student.beforeSave(async(student)=> {
   const students = await Student.findAll({
     where: {
       campusId: student.campusId
