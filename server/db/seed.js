@@ -25,8 +25,8 @@ const generateStudents = (studentNum,campusNum)=>{
       {
         firstName: faker.name.firstName(),
         lastName: faker.name.lastName(),
-        /* email: `${firstName}.${lastName}@nonohu.com`, */
-        email: faker.internet.email(),
+        //email: faker.internet.email()
+        email: `${firstName}.${lastName}@nonowho.com`,
         imageUrl: faker.image.avatar(),
         gpa: parseFloat(2+2*Math.random()).toFixed(1),
         campusId: Math.ceil(campusNum*Math.random())
